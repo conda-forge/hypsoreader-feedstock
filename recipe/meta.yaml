@@ -41,8 +41,6 @@ requirements:
 test:
   imports:
     - hypsoreader
-    - rasterio
-    - geopandas
   commands:
     - pip check
     - pip list
