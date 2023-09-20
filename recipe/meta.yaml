@@ -41,7 +41,6 @@ requirements:
 test:
   imports:
     - hypsoreader
-    - gdal
     - rasterio
     - geopandas
   commands:
