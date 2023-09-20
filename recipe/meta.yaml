@@ -1,5 +1,5 @@
 {% set name = "hypsoreader" %}
-{% set version = "0.5.5" %}
+{% set version = "0.5.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/DevAlvaroF/HYPSO-Reading/archive/v{{ version }}.tar.gz
-  sha256: aeed6452fee1bd2fb47d204e9e90b53cec5f58e696ba91a6585cff965f531955
+  sha256: 303680b9cd360160b7cf69c55e102e0df97e6f5d30a9642a2a6a835700fb9dde
 
 build:
   number: 0
