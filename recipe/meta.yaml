@@ -1,5 +1,5 @@
 {% set name = "hypsoreader" %}
-{% set version = "0.2.0" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/DevAlvaroF/HYPSO-Reading/archive/v{{ version }}.tar.gz
-  sha256: b671969fa801ce4a7c196e92a3a202eff691c5a90d237d501bdcb8443276168c
+  sha256: 171721746c1d8ed2c6a5ec98aa808c1a8e9afb95e1bfc26b37cc3b1bb84d7365
 
 build:
   number: 0
@@ -31,10 +31,19 @@ requirements:
     - geopandas =0.12.2
     - rasterio =1.3.4
     - pyproj =3.4.1
+    - netcdf4 =1.6.3
+    - scikit-image =0.21.0
+    - py6s =1.9.2
+    - scipy =1.11.2
+    - pillow =9.4.0
+    - shapely =2.0.1
 
 test:
   imports:
     - hypsoreader
+    - gdal
+    - rasterio
+    - geopandas
   commands:
     - pip check
     - pip list
